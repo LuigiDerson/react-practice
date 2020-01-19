@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Toggle from './ToggleHook';
+import Modal from './Modal';
+import Button from '@material-ui/core/Button';
 
 function App() {
   return (
@@ -19,6 +22,16 @@ function App() {
           Learn React
         </a>
       </header>
+      <Toggle>
+        {({ on, toggle }) => (
+          <>
+            <Button onClick={toggle}>Login</Button>
+            <Modal on={on} toggle={toggle}>
+              <h1>Still in modal</h1>
+            </Modal>
+          </>
+        )}
+      </Toggle>
     </div>
   );
 }
