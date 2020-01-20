@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Toggle from './ToggleHook';
-import Modal from './Modal';
+import { Toggle } from 'utilities';
+import { Modal } from 'elements';
 import Button from '@material-ui/core/Button';
 
 function App() {
@@ -25,9 +25,11 @@ function App() {
       <Toggle>
         {({ on, toggle }) => (
           <>
-            <Button onClick={toggle}>Login</Button>
+            <Button variant="contained" color="primary" onClick={toggle}>
+              Login
+            </Button>
             <Modal on={on} toggle={toggle}>
-              <h1>Still in modal</h1>
+              <h1>Sing up</h1>
             </Modal>
           </>
         )}
