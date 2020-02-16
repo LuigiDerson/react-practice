@@ -1,9 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Toggle } from 'utilities';
-import { Modal } from 'elements';
-import Button from '@material-ui/core/Button';
+import React from 'react'
+import './App.css'
+import { Toggle } from 'utilities'
+import { Modal } from 'elements'
+import Button from '@material-ui/core/Button'
+import logo from './logo.svg'
+import Accordion from './components/accordion/Accordion'
 
 function App() {
   return (
@@ -34,8 +35,35 @@ function App() {
           </>
         )}
       </Toggle>
+      <Accordion singleOpen>
+        <div label="Section 1" id="0">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+            accusantium dolor temporibus ea ut rem? Magnam nulla facilis quaerat
+            quibusdam soluta, ad molestiae dicta dolorem aliquam porro odit quod
+            quasi.
+          </p>
+        </div>
+        <div label="Section 2" id="1">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+            accusantium dolor temporibus ea ut rem? Magnam nulla facilis quaerat
+            quibusdam soluta, ad molestiae dicta dolorem aliquam porro odit quod
+            quasi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+            accusantium dolor temporibus ea ut rem? Magnam nulla facilis quaerat
+            quibusdam soluta, ad molestiae dicta dolorem aliquam porro odit quod
+            quasi.
+          </p>
+        </div>
+        <div label="Section 3">
+          <p>Hey you</p>
+        </div>
+      </Accordion>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
