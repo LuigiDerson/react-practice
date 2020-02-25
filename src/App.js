@@ -35,8 +35,8 @@ function App() {
           </>
         )}
       </Toggle>
-      <Accordion singleOpen>
-        <div label="Section 1" id="0">
+      <Accordion>
+        <div label="Section 1">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
             accusantium dolor temporibus ea ut rem? Magnam nulla facilis quaerat
@@ -44,7 +44,7 @@ function App() {
             quasi.
           </p>
         </div>
-        <div label="Section 2" id="1">
+        <div label="Section 2">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
             accusantium dolor temporibus ea ut rem? Magnam nulla facilis quaerat
@@ -59,7 +59,18 @@ function App() {
           </p>
         </div>
         <div label="Section 3">
-          <p>Hey you</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+            accusantium dolor temporibus ea ut rem? Magnam nulla facilis quaerat
+            quibusdam soluta, ad molestiae dicta dolorem aliquam porro odit quod
+            quasi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+            accusantium dolor temporibus ea ut rem? Magnam nulla facilis quaerat
+            quibusdam soluta, ad molestiae dicta dolorem aliquam porro odit quod
+            quasi.
+          </p>
         </div>
       </Accordion>
     </div>

@@ -1,4 +1,4 @@
-import Portal from './Portal';
-import Toggle from './Toggle';
+import Portal from './Portal'
+import Toggle from './Toggle'
 
-export { Portal, Toggle };
+export { Portal, Toggle }
