@@ -23,7 +23,7 @@ const LuigiWrapper = styled.div`
   overflow: hidden;
   height: 3rem;
   width: 20px;
-  transition: width 380ms linear;
+  transition: width 320ms cubic-bezier(0.25, 1, 0.25, 1);
 `
 
 const DersonWrapper = styled.div`
@@ -32,7 +32,8 @@ const DersonWrapper = styled.div`
   height: 3rem;
   width: 20px;
   left: 7px;
-  transition: width 500ms linear, left 500ms linear;
+  transition: width 340ms cubic-bezier(0.25, 1, 0.5, 1),
+    left 420ms cubic-bezier(0.25, 1, 0.5, 1);
 `
 
 const Container = styled.div`
@@ -40,21 +41,21 @@ const Container = styled.div`
   position: relative;
   height: 3rem;
   overflow: hidden;
-  width: 26px;
+  width: 7%;
   cursor: pointer;
-  background: gray;
-  transition: width 500ms linear;
+
+  transition: width 450ms cubic-bezier(0.25, 1, 0.5, 1);
 
   &:hover {
     width: 286px;
 
     & > ${LuigiWrapper} {
       width: 110px;
-      transition: width 500ms linear;
+      transition: width 400ms cubic-bezier(0.25, 1, 0.5, 1);
     }
 
     & > ${DersonWrapper} {
-      width: 200px;
+      width: 161px;
       left: 125px;
     }
   }
