@@ -26,6 +26,7 @@
       {
         "semi": false
       }
-    ]
+    ],
+    "react/prop-types": 0
   }
 }

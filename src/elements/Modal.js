@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Portal } from 'utilities'
 import Icon from './Icon'
 import Card from './Cards'
 
-export default function Modal(props) {
-  const { children, on, toggle } = props
+export default function Modal({ children, on, toggle }) {
   return (
     <Portal>
       {on && (
