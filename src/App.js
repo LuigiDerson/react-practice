@@ -4,11 +4,13 @@ import { Toggle } from 'utilities'
 import { Modal } from 'elements'
 import Button from '@material-ui/core/Button'
 import Accordion from './components/accordion/Accordion'
+import HoverMenu from './components/hoverMenu/HoverMenu'
 
 function App() {
   return (
     <div className="App">
-      <Toggle>
+      <HoverMenu />
+      {/* <Toggle>
         {({ on, toggle }) => (
           <>
             <Button variant="contained" color="primary" onClick={toggle}>
@@ -19,8 +21,8 @@ function App() {
             </Modal>
           </>
         )}
-      </Toggle>
-      <Accordion>
+      </Toggle> */}
+      {/* <Accordion>
         <div label="Section 1">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
@@ -57,7 +59,7 @@ function App() {
             quasi.
           </p>
         </div>
-      </Accordion>
+      </Accordion> */}
     </div>
   )
 }
