@@ -1,16 +1,26 @@
 import React from 'react'
+import { Provider } from 'react-redux'
+import { configureStore } from '@reduxjs/toolkit'
+
 import './App.css'
-import { Toggle } from 'utilities'
-import { Modal } from 'elements'
-import Button from '@material-ui/core/Button'
-import Accordion from './components/accordion/Accordion'
+// import { Toggle } from 'utilities'
+// import { Modal } from 'elements'
+// import Button from '@material-ui/core/Button'
+// import Accordion from './components/accordion/Accordion'
 import HoverMenu from './components/hoverMenu/HoverMenu'
+
+import rootReducer from './reducers'
+
+const store = configureStore({
+  reducer: rootReducer,
+})
 
 function App() {
   return (
-    <div className="App">
-      <HoverMenu />
-      {/* <Toggle>
+    <Provider store={store}>
+      <div className="App">
+        <HoverMenu />
+        {/* <Toggle>
         {({ on, toggle }) => (
           <>
             <Button variant="contained" color="primary" onClick={toggle}>
@@ -22,7 +32,7 @@ function App() {
           </>
         )}
       </Toggle> */}
-      {/* <Accordion>
+        {/* <Accordion>
         <div label="Section 1">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
@@ -60,7 +70,8 @@ function App() {
           </p>
         </div>
       </Accordion> */}
-    </div>
+      </div>
+    </Provider>
   )
 }
 
